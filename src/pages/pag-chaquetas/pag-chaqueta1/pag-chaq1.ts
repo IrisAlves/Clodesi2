@@ -15,5 +15,6 @@ export class PagChaq1Page {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PagChaq1Page');
   }
+  
 
 }
