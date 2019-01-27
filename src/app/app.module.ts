@@ -10,7 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { PagChaquetasPage } from '../pages/pag-chaquetas/pag-chaquetas';
 import { PagJerseyPage } from '../pages/pag-jersey/pag-jersey';
 import { PagChaq1Page } from '../pages/pag-chaquetas/pag-chaqueta1/pag-chaq1';
-
+import {IonicImageViewerModule} from 'ionic-img-viewer';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,6 +24,7 @@ import { PagChaq1Page } from '../pages/pag-chaquetas/pag-chaqueta1/pag-chaq1';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    IonicImageViewerModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

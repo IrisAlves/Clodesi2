@@ -14,5 +14,14 @@
   
   
   <ion-content padding>
+    <ion-slides class="image-slider" loop="true" >
+      <ion-slide *ngFor="let img of images">
+        <img src="../../../assets/imgs/chaquetas/chaqueta1/{{img}}" class="thum-img" imageViewer>
+      </ion-slide>
+    </ion-slides>
+    
+      <button ion-button color="danger" style="text-align:right">Añadir a Favoritos</button>
+      <button ion-button  color="danger" style="text-align:left">Comprar</button>
+    
   
   </ion-content>
