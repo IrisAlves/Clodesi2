@@ -5,15 +5,9 @@
           </ion-toolbar>
         </ion-header>
         <ion-content>
-          <ion-list>
-            <button ion-item >
-              Inicio
-            </button>
-            <button ion-item >
-              Favoritos
-            </button>
-            <button ion-item >
-              Ajustes
+          <ion-list>            
+            <button ion-item  menuClose  *ngFor="let pa of paginas" (click)="openPage(pa)" >
+               {{pa.title}}
             </button>
           </ion-list>
         </ion-content>

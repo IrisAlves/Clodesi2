@@ -11,6 +11,8 @@ import { PagChaquetasPage } from '../pages/pag-chaquetas/pag-chaquetas';
 import { PagJerseyPage } from '../pages/pag-jersey/pag-jersey';
 import { PagChaq1Page } from '../pages/pag-chaquetas/pag-chaqueta1/pag-chaq1';
 import {IonicImageViewerModule} from 'ionic-img-viewer';
+import { PagJersey1Page } from '../pages/pag-jersey/pag-jersey1/pag-jersey1';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -19,7 +21,8 @@ import {IonicImageViewerModule} from 'ionic-img-viewer';
     PagAjustesPage,
     PagChaquetasPage,
     PagChaq1Page,
-    PagJerseyPage
+    PagJerseyPage,
+    PagJersey1Page
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import {IonicImageViewerModule} from 'ionic-img-viewer';
     PagAjustesPage,
     PagChaquetasPage,
     PagChaq1Page,
-    PagJerseyPage
+    PagJerseyPage,
+    PagJersey1Page
   ],
   providers: [
     StatusBar,

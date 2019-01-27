@@ -22,6 +22,9 @@ export class PagJerseyPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PagJerseyPage');
   }
+  abrir1(){
+    //this.navCtrl.push();
+  }
   atras(){
     this.navCtrl.push(HomePage);
   }

@@ -1,6 +1,6 @@
 
-import { Component } from '@angular/core';
-import { Platform,} from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Platform,Nav} from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -9,11 +9,14 @@ import { PagChaquetasPage } from '../pages/pag-chaquetas/pag-chaquetas';
 import { PagJerseyPage } from '../pages/pag-jersey/pag-jersey';
 import { PagFavoritosPage } from '../pages/pag-favoritos/pag-favoritos';
 import { PagAjustesPage } from '../pages/pag-ajustes/pag-ajustes';
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
+  @ViewChild(Nav) nav: Nav;
   rootPage:any = HomePage;
+
   text: string = '';
 //paginas que se va ver el menu lateral
   paginas:Array<{title:string,component:any}>;
@@ -24,11 +27,13 @@ export class MyApp {
     this.paginas=[
       {title:'Home',component:HomePage},
       {title:'Chaquetas',component:PagChaquetasPage},
-      {title:'Jersey',component:PagJerseyPage},
-      {title:'Fav',component:PagFavoritosPage},
+      {title:'Jerseis',component:PagJerseyPage},
+      {title:'Favoritos',component:PagFavoritosPage},
       {title:'Ajustes',component:PagAjustesPage}
   ];
   }
+
+
   initializeApp(){
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -38,6 +43,11 @@ export class MyApp {
     });
   }
 
+  
+   openPage(pag: { component: any; }) {
+    
+    this.nav.push(pag.component);
+  }
 
 }
 
