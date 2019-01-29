@@ -29,7 +29,7 @@ export class MyApp {
       {title:'Chaquetas',component:PagChaquetasPage},
       {title:'Jerseis',component:PagJerseyPage},
       {title:'Favoritos',component:PagFavoritosPage},
-      {title:'Ajustes',component:PagAjustesPage}
+      {title:'Contacto',component:PagAjustesPage}
   ];
   }
 

@@ -7,12 +7,20 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>PagAjustes</ion-title>
+    <ion-title><ion-icon name="people" ></ion-icon> Contacto</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    
+    <ion-fab bottom>
+        <button ion-fab (click)="showAlert()" class="classtelefono">
+          <ion-icon name="call" ></ion-icon>
+        </button>
+        <button ion-fab (click)="showAlert2()" class="classmovil">
+            <ion-icon name="phone-portrait" ></ion-icon>
+          </button>
+    </ion-fab>
 </ion-content>
