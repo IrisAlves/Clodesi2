@@ -15,6 +15,17 @@ import { PagJersey1Page } from '../pages/pag-jersey/pag-jersey1/pag-jersey1';
 import { PagJersey2Page } from '../pages/pag-jersey/pag-jersey2/pag-jersey2';
 import { PagChaq2Page } from '../pages/pag-chaquetas/pag-chaqueta2/pag-chaq2';
 
+import 'firebase/database';
+
+export const firebaseConfig = {
+    apiKey: "AIzaSyDLjQIylLhb61LhL9IKo9sC8tUiNC4lSS4",
+    authDomain: "clodesi.firebaseapp.com",
+    databaseURL: "https://clodesi.firebaseio.com",
+    projectId: "clodesi",
+    storageBucket: "clodesi.appspot.com",
+    messagingSenderId: "859487476993"
+  };
+
 @NgModule({
   declarations: [
     MyApp,
@@ -31,7 +42,9 @@ import { PagChaq2Page } from '../pages/pag-chaquetas/pag-chaqueta2/pag-chaq2';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    IonicImageViewerModule
+    IonicImageViewerModule,  
+    //AngularFireDatabaseModule,  
+    //fire.initializeApp(firebaseConfig,'Clodesi'),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
