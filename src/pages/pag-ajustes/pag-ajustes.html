@@ -13,13 +13,18 @@
 </ion-header>
 
 
-<ion-content padding>
-    
-    <ion-fab bottom>
-        <button ion-fab (click)="showAlert()" class="classtelefono">
+<ion-content padding class="fondo">
+  <ion-card>
+    <div class="card-titulo" (click)="abrirchaq1()">Para cualquier pregunta, no dudes en llamar.</div>
+    <div class="card-subtitulo">59,95€</div>
+  </ion-card> 
+    <ion-fab right bottom>
+        <button ion-fab (click)="showAlert()" >
           <ion-icon name="call" ></ion-icon>
         </button>
-        <button ion-fab (click)="showAlert2()" class="classmovil">
+    </ion-fab>
+    <ion-fab left bottom >
+        <button ion-fab (click)="showAlert2()">
             <ion-icon name="phone-portrait" ></ion-icon>
           </button>
     </ion-fab>
